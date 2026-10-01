@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>/08/ Augusts — frizierdarbnīca Miera ielā 19, Rīgā</title>
+<meta name="description" content="Frizierdarbnīca Augusts Miera ielā 19, Rīgā. Tiešsaistes pieraksts, tālrunis 20 133 088. Pirmdiena–piektdiena 10–19, sestdiena 10–17.">
+<meta name="theme-color" content="#201d1b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23201d1b'/%3E%3Ctext x='32' y='41' font-family='Helvetica,Arial,sans-serif' font-size='24' font-weight='600' fill='%23f2ece3' text-anchor='middle'%3E/08/%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Gloock + Albert Sans carry LV/EN. On the RU page the whole display layer switches to Playfair Display 500 (Gloock has no Cyrillic),
+     so Latin and Cyrillic headings share one face; Onest only steps in for Cyrillic body glyphs. LV/EN visitors never download either. -->
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Albert+Sans:wght@400;500;600&family=Playfair+Display:wght@500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.jpg" media="(max-width:860px)">
+<link rel="preload" as="image" href="img/hero-d.jpg" media="(min-width:861px)">
+<style>
+:root{
+  --sand:#ede6db; --paper:#f6f2ec; --ink:#211e1b; --ink2:#4b453f; --mute:#766b60; --line:rgba(33,30,27,.13);
+  --char:#201d1b; --char2:#2c2825; --on:#f2ece3; --on2:#aba196; --rule:rgba(255,255,255,.12);
+  --red:#c63a2e; --red2:#a93024; --open:#7fb489;
+  --serif:"Gloock", "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Albert Sans", "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --pad:clamp(20px,5.2vw,64px); --max:1280px; --hh:64px;
+}
+/* RU: one display face for everything — Cyrillic headings, the 4,8, prices, the address */
+html[lang="ru"]{--serif:"Playfair Display", Georgia, "Times New Roman", serif}
+/* Playfair defaults to old-style figures; prices, phone numbers, the 4,8 and the house number read better lining */
+html[lang="ru"] .score b,html[lang="ru"] .prices dd,html[lang="ru"] .tile b,html[lang="ru"] .visit h2{font-variant-numeric:lining-nums}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hh)}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+p,h1,h2,h3,figure,blockquote,dl,dd{margin:0}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.label{font:600 12px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.label i{font-style:normal;font-weight:500;letter-spacing:.06em;color:var(--ink);margin-right:.7em}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.012em}
+h2{font-size:clamp(34px,5.4vw,64px);line-height:1.04}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* concept notice */
+.notice{background:#141210;color:#b4aa9f;font:500 12.5px/1.4 var(--sans);text-align:center;padding:8px var(--pad)}
+.notice b{color:#f2ece3;font-weight:600}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 24px;border:0;border-radius:0;text-decoration:none;font:600 16px/1 var(--sans);letter-spacing:.005em;cursor:pointer;white-space:nowrap;transition:background-color .2s,color .2s,box-shadow .2s}
+.btn svg{width:17px;height:17px;flex:none}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:var(--red2)}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+.btn.sm{height:40px;padding:0 16px;font-size:14.5px}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;height:var(--hh);margin-bottom:calc(-1 * var(--hh));color:#fff}
+.top .wrap{display:flex;align-items:center;gap:12px;height:100%}
+.mark{display:flex;align-items:baseline;gap:10px;text-decoration:none;font:600 15px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;flex:none}
+.mark i{font-style:normal;font-weight:500;letter-spacing:.06em;opacity:.8}
+.nav{display:none;gap:28px}
+.nav a{font:500 15px/1 var(--sans);text-decoration:none;opacity:.86;white-space:nowrap}
+.nav a:hover{opacity:1}
+.langs{display:flex;margin-left:auto}
+.langs button{font:600 12.5px/1 var(--sans);letter-spacing:.08em;border:0;background:none;color:inherit;opacity:.85;padding:10px 6px;cursor:pointer}
+.langs button:hover{opacity:1}
+.top:not(.solid){text-shadow:0 1px 10px rgba(0,0,0,.45)}
+.langs button[aria-pressed="true"]{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1.5px}
+.top .tel{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:40px;height:40px;font:600 15px/1 var(--sans);text-decoration:none;letter-spacing:.02em;white-space:nowrap}
+.top .tel svg{width:17px;height:17px}
+.top .tel span{display:none}
+.top .book{display:none}
+.top.solid{background:var(--sand);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.top.solid .book{display:inline-flex}
+/* phone, solid header: the call icon goes (the hero and /03/ carry the number), the language switch stays, compact */
+@media (max-width:860px){
+  .top.solid .tel{display:none}
+  .top.solid .langs button{padding:10px 4px;font-size:12px;letter-spacing:.06em}
+  .top.solid .book{margin-left:4px}
+}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 36px);display:flex;align-items:flex-end;color:#fff;background:#2a2420;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 50%}
+/* top band keeps the header legible over bulbs and ceiling; the text block below carries its own scrim (.hero-in::before),
+   so the darkness follows the words at every width instead of a fixed percentage of the photo */
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,16,13,.62) 0,rgba(20,16,13,.32) 64px,rgba(20,16,13,0) 150px,rgba(20,16,13,0) 62%,rgba(20,16,13,.42) 100%)}
+.hero-in{position:relative;z-index:1;width:100%;padding-top:120px;padding-bottom:28px}
+.hero-in::before{content:"";position:absolute;z-index:-1;top:24px;bottom:0;left:calc(50% - 50vw);right:calc(50% - 50vw);pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,16,13,0) 0,rgba(20,16,13,.5) 72px,rgba(20,16,13,.66) 140px,rgba(20,16,13,.8) 100%)}
+.hero h1 .l{display:inline}
+.hero .kicker{font:600 12px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.hero h1{font-size:clamp(44px,12vw,104px);line-height:.98;margin:14px 0 16px;max-width:9ch}
+html[lang="ru"] .hero h1,html[lang="en"] .hero h1{max-width:none}
+@media (max-width:860px){ html[lang="ru"] .hero h1{font-size:clamp(38px,10.2vw,64px)} }
+.hero .lede{font-size:17px;line-height:1.55;color:rgba(255,255,255,.88);max-width:34ch}
+.hero .cta{display:flex;gap:10px;margin-top:24px;max-width:520px}
+.hero .cta .red{flex:1 1 auto;min-width:0}
+.hero .cta .ghost{flex:0 0 auto;padding:0 20px}
+.hero .call{position:relative}
+.hero .call svg{display:none;width:19px;height:19px}
+.status{display:flex;align-items:center;gap:9px;margin-top:16px;font:500 14px/1.3 var(--sans);color:rgba(255,255,255,.8)}
+.status i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.45);flex:none}
+.status.is-open i{background:var(--open);box-shadow:0 0 0 4px rgba(127,180,137,.22)}
+/* narrow Androids (360 px): 'Zvanīt' becomes a square phone button so the row keeps both gutters */
+@media (max-width:379px){
+  .hero .cta .red{padding:0 18px}
+  .hero .cta .ghost{width:54px;padding:0}
+  .hero .call svg{display:block}
+  .hero .call .t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}
+@media (max-width:339px){ .hero .cta .red{font-size:15px;padding:0 12px;gap:8px} }
+
+/* reviews */
+.reviews{background:var(--paper);padding:72px 0 56px}
+.rv-head{display:flex;flex-direction:column;gap:18px}
+.score{display:flex;align-items:center;gap:14px}
+.score b{font:400 64px/.9 var(--serif);letter-spacing:-.02em}
+.score .stars{display:inline-block;font-size:15px;letter-spacing:.14em;color:transparent;
+  background:linear-gradient(90deg,var(--ink) 0 93%,rgba(33,30,27,.22) 93%);-webkit-background-clip:text;background-clip:text}
+.score small{display:block;font:500 14px/1.35 var(--sans);color:var(--ink2);margin-top:4px}
+.lead{margin-top:40px}
+.lead blockquote{font:400 clamp(28px,3.6vw,44px)/1.2 var(--serif);letter-spacing:-.01em;text-indent:-.4em}
+.who{display:block;margin-top:14px;font:600 13px/1.3 var(--sans);letter-spacing:.06em;color:var(--mute)}
+.more{display:grid;gap:34px;margin-top:52px}
+.more blockquote{font-size:18px;line-height:1.55;color:var(--ink);text-indent:-.35em}
+/* RU/EN: the translation is the quote; the Latvian original stays underneath as one small grey line */
+.tr-note{margin-top:2px;font:500 13.5px/1.4 var(--sans);color:var(--mute)}
+html:not([lang="lv"]) blockquote.src{margin-top:10px;font:400 13.5px/1.45 var(--sans);letter-spacing:0;text-indent:0;color:var(--mute)}
+blockquote.src .lv{display:none}
+html:not([lang="lv"]) blockquote.src .lv{display:inline;margin-right:.55em;font-weight:600;font-size:11px;letter-spacing:.12em;color:var(--ink2)}
+.rv-q{display:flex;flex-direction:column}
+.rv-q .src{order:2}
+.rv-q .who{order:3}
+
+/* room */
+.room{padding:60px 0 88px}
+.room-grid{display:grid;gap:28px}
+.room-text p{margin-top:18px;color:var(--ink2);max-width:40ch}
+.room-text h2{margin-top:14px;max-width:14ch}
+.ph{margin:0}
+.ph img{width:100%}
+.ph figcaption{margin-top:10px;font:500 13.5px/1.4 var(--sans);color:var(--mute)}
+.ph .d{display:none}
+.room .a img{aspect-ratio:1200/948;object-fit:cover}
+.room .b img{aspect-ratio:4/5;object-fit:cover}
+/* phone: the photo wall runs edge to edge straight after the text, the room follows inset */
+@media (max-width:860px){
+  .room-grid{gap:0}
+  .room .b{order:1;margin:34px calc(-1 * var(--pad)) 0}
+  .room .b figcaption{padding:0 var(--pad)}
+  .room .a{order:2;margin-top:36px}
+}
+
+/* booking */
+.book-s{background:var(--char);color:var(--on);padding:80px 0 84px}
+.book-s .label{color:var(--on2)}
+.book-s .label i{color:var(--on)}
+.bk-head h2{margin-top:14px;max-width:12ch}
+.book-s .intro{margin-top:18px;color:#cfc6bb;max-width:40ch}
+.prices{margin-top:36px}
+.p-h{font:600 12px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--on2)}
+.prices dl{margin:14px 0 0}
+.prices dl div{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:13px 0;border-top:1px solid var(--rule)}
+.prices dl div:last-child{border-bottom:1px solid var(--rule)}
+.prices dt{font-size:16.5px;line-height:1.35;color:var(--on)}
+.prices dt small{display:block;margin-top:3px;font-size:13.5px;color:var(--on2)}
+.prices dd{font:400 21px/1.2 var(--serif);white-space:nowrap;color:var(--on)}
+.prices dd i{font:500 .8em/1 var(--sans);font-style:normal;margin:0 .12em;position:relative;top:-.08em}
+.p-note{padding-top:14px;font-size:14px;line-height:1.5;color:var(--on2);max-width:52ch}
+.bk-go{margin-top:32px}
+.book-s .go{width:100%;height:60px;font-size:17px}
+.via{margin-top:12px;font-size:14px;color:var(--on2)}
+.tiles{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:32px}
+.tile{display:block;padding:18px 18px 20px;background:var(--char2);text-decoration:none;transition:background-color .2s}
+.tile:hover{background:#37322e}
+.tile span{display:block;font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--on2)}
+.tile b{display:block;margin-top:10px;font:400 24px/1.1 var(--serif);letter-spacing:-.005em;color:var(--on);overflow-wrap:anywhere}
+.tile.mail b{font:500 17px/1.3 var(--sans)}
+
+/* visit */
+.visit{padding:84px 0 92px}
+.visit-grid{display:grid;gap:40px}
+.visit h2{margin-top:14px;font-size:clamp(44px,7vw,84px);line-height:.98}
+.visit .addr{margin-top:8px;font:500 17px/1.4 var(--sans);color:var(--ink2)}
+.visit .how{margin-top:20px;color:var(--ink2);max-width:38ch}
+.visit .btn{margin-top:26px}
+.hours{margin-top:44px;background:var(--paper);padding:22px 22px 10px}
+.now{display:flex;align-items:center;gap:10px;font:600 15px/1.3 var(--sans);color:var(--ink);padding-bottom:14px}
+.now i{width:9px;height:9px;border-radius:50%;background:#b9b0a5;flex:none}
+.now.is-open i{background:#4f9a5f;box-shadow:0 0 0 4px rgba(79,154,95,.18)}
+.hours .row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:16px;color:var(--ink2)}
+.hours .row span+span{font-variant-numeric:tabular-nums;color:var(--ink);text-align:right}
+.hours .row.today{color:var(--ink);font-weight:600}
+.visit .sign img{aspect-ratio:4/5;object-fit:cover}
+
+/* footer */
+footer{background:var(--char);color:var(--on2);padding:56px 0 64px;font-size:14.5px;line-height:1.6}
+.seal{display:block;width:96px;height:96px;color:var(--on)}
+.seal text{font-family:var(--sans);fill:currentColor}
+footer .f-id p{margin-top:20px}
+footer p{max-width:62ch}
+footer .cols > p{margin-top:14px}
+footer a{color:var(--on);text-underline-offset:3px}
+footer .nw{white-space:nowrap}
+footer .links{display:block;margin-top:6px;white-space:nowrap}
+footer .fine{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:13.5px}
+
+/* desktop */
+@media (min-width:861px){
+  :root{--hh:76px}
+  .top .wrap{gap:28px}
+  .nav{display:flex;margin-left:auto}
+  .nav + .langs{margin-left:0}
+  .langs button{padding:10px 5px}
+  .top .tel span{display:inline}
+  .hero{min-height:min(calc(100vh - 36px),940px)}
+  .hero::after{background:
+    linear-gradient(90deg,rgba(20,16,13,.72) 0%,rgba(20,16,13,.42) 40%,rgba(20,16,13,0) 68%),
+    linear-gradient(180deg,rgba(20,16,13,.6) 0,rgba(20,16,13,.42) 110px,rgba(20,16,13,0) 230px,rgba(20,16,13,0) 55%,rgba(20,16,13,.6) 100%)}
+  .hero-in{padding-bottom:72px}
+  /* desktop scrim: behind the text column only, fading in just above the kicker (it sat on the lit counter) */
+  .hero-in::before{top:30px;
+    background:linear-gradient(90deg,rgba(20,16,13,.6) 0,rgba(20,16,13,.48) 34%,rgba(20,16,13,.2) 52%,rgba(20,16,13,0) 66%);
+    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 80px);mask-image:linear-gradient(180deg,transparent 0,#000 80px)}
+  .hero h1{margin:18px 0 22px;max-width:none;font-size:clamp(64px,6.6vw,100px)}
+  html[lang="ru"] .hero h1,html[lang="en"] .hero h1{max-width:none}
+  .hero h1 .l{display:block}
+  .hero .lede{font-size:19px}
+  .hero .cta{margin-top:32px}
+  .hero .cta .red{flex:0 0 auto;padding:0 30px}
+  .reviews{padding:120px 0 128px}
+  .rv-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:88px;align-items:start}
+  .lead{margin-top:44px}
+  .more{margin-top:0;gap:44px;padding-top:6px}
+  .more blockquote{font-size:19px}
+  .room{padding:128px 0}
+  .room-grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:36px 56px;align-items:start}
+  .room-text{grid-column:1;grid-row:1;padding-top:8px}
+  .room-text h2{font-size:clamp(40px,3.9vw,54px);max-width:none}
+  /* the window photo spans both rows and ends level with the wall photo */
+  .room .a{grid-column:2;grid-row:1 / span 2;margin:0;align-self:stretch;display:flex;flex-direction:column}
+  .room .a picture{position:relative;display:block;flex:1 1 auto;min-height:480px}
+  .room .a img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+  .room .b{grid-column:1;grid-row:2;align-self:end;margin:0}
+  .room .b figcaption{padding:0}
+  .ph .m{display:none}.ph .d{display:inline}
+  .book-s{padding:120px 0}
+  .book-in{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);grid-template-areas:"head prices" "go prices" "tiles prices";column-gap:88px;align-items:start}
+  .bk-head{grid-area:head}
+  .bk-go{grid-area:go}
+  .prices{grid-area:prices;margin-top:0;align-self:center}
+  .tiles{grid-area:tiles;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);margin-top:44px}
+  .book-s .go{width:auto;padding:0 34px}
+  .visit{padding:128px 0 136px}
+  .visit-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:88px;align-items:center}
+  .visit .sign{order:2}
+  footer .cols{display:flex;justify-content:space-between;gap:64px;align-items:flex-end}
+  footer .cols > p{flex:0 1 32ch;text-wrap:balance}
+  footer .f-id{display:flex;align-items:center;gap:28px}
+  footer .f-id p{margin-top:0}
+  .seal{width:108px;height:108px}
+}
+@media (min-width:861px) and (max-width:1100px){
+  .top .wrap{gap:18px}
+  .nav{gap:18px}
+  .nav a{font-size:14.5px}
+  .top .tel span{display:none}
+  .rv-grid,.book-in,.visit-grid{gap:48px}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav Augusta oficiālā lapa.</span><span data-lang="ru" hidden>Дизайн-предложение, не официальный сайт Augusts.</span><span data-lang="en" hidden>A design proposal, not the official website of Augusts.</span></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#" aria-label="/08/ Augusts"><i>/08/</i>Augusts</a>
+    <nav class="nav" aria-label="Sadaļas">
+      <a href="#atsauksmes"><span data-lang="lv">Atsauksmes</span><span data-lang="ru" hidden>Отзывы</span><span data-lang="en" hidden>Reviews</span></a>
+      <a href="#salons"><span data-lang="lv">Salons</span><span data-lang="ru" hidden>Салон</span><span data-lang="en" hidden>The salon</span></a>
+      <a href="#pieraksts"><span data-lang="lv">Cenas un pieraksts</span><span data-lang="ru" hidden>Цены и запись</span><span data-lang="en" hidden>Prices &amp; booking</span></a>
+      <a href="#kur"><span data-lang="lv">Kur un kad</span><span data-lang="ru" hidden>Где и когда</span><span data-lang="en" hidden>Find us</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Valoda / Язык / Language">
+      <button type="button" data-set="lv" aria-pressed="true">LV</button>
+      <button type="button" data-set="ru" aria-pressed="false">RU</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="tel" href="tel:+37120133088" aria-label="20 133 088"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.5a11.5 11.5 0 0 0 7.1 7.1l1.5-2.2 4.3 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></svg><span>20 133 088</span></a>
+    <a class="btn red sm book" href="https://fortic.io/onlinebooking-augusts" target="_blank" rel="noopener"><span data-lang="lv">Pierakstīties</span><span data-lang="ru" hidden>Записаться</span><span data-lang="en" hidden>Book</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="sakums">
+  <picture>
+    <source media="(max-width:860px)" srcset="img/hero-m.jpg" width="1200" height="1750">
+    <img src="img/hero-d.jpg" width="2200" height="1291" alt="Frizierdarbnīcas „Augusts” telpa Miera ielā 19: koka grīda, frizieru krēsli un monsteras" data-alt-ru="Зал парикмахерской Augusts на улице Миера, 19: деревянный пол, парикмахерские кресла и монстеры" data-alt-en="The Augusts salon at Miera iela 19: wooden floor, styling chairs and monsteras" fetchpriority="high">
+  </picture>
+  <div class="wrap hero-in">
+    <p class="kicker"><span data-lang="lv">Frizierdarbnīca Miera ielā 19, Rīgā</span><span data-lang="ru" hidden>Парикмахерская на ул. Миера, 19, Рига</span><span data-lang="en" hidden>Hair salon at Miera iela 19, Rīga</span></p>
+    <h1><span data-lang="lv"><span class="l">Vispirms uzklausa,</span> <span class="l">tad&nbsp;griež.</span></span><span data-lang="ru" hidden><span class="l">Сначала слушают,</span> <span class="l">потом стригут.</span></span><span data-lang="en" hidden><span class="l">First they listen,</span> <span class="l">then they&nbsp;cut.</span></span></h1>
+    <p class="lede"><span data-lang="lv">Mierīga, klusa vieta, mūzika un garda tēja&nbsp;— tā&nbsp;par Augustu raksta viesi.</span><span data-lang="ru" hidden>Спокойное, тихое место, музыка и вкусный чай&nbsp;— так об&nbsp;Augusts пишут гости.</span><span data-lang="en" hidden>A calm, quiet place, music and tasty tea&nbsp;— that is how guests describe Augusts.</span></p>
+    <div class="cta">
+      <a class="btn red" href="https://fortic.io/onlinebooking-augusts" target="_blank" rel="noopener"><span data-lang="lv">Pierakstīties tiešsaistē</span><span data-lang="ru" hidden>Записаться онлайн</span><span data-lang="en" hidden>Book online</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <a class="btn ghost call" href="tel:+37120133088"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2.2 1.5a11.5 11.5 0 0 0 7.1 7.1l1.5-2.2 4.3 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></svg><span class="t"><span data-lang="lv">Zvanīt</span><span data-lang="ru" hidden>Позвонить</span><span data-lang="en" hidden>Call</span></span></a>
+    </div>
+    <p class="status" id="status"><i></i><span>Pirmdiena–piektdiena 10–19, sestdiena 10–17</span></p>
+  </div>
+</section>
+
+<section class="reviews" id="atsauksmes">
+  <div class="wrap rv-grid">
+    <div>
+      <div class="rv-head">
+        <p class="label"><i>/01/</i><span data-lang="lv">Atsauksmes</span><span data-lang="ru" hidden>Отзывы</span><span data-lang="en" hidden>Reviews</span></p>
+        <div class="score"><b><span data-lang="lv">4,8</span><span data-lang="ru" hidden>4,8</span><span data-lang="en" hidden>4.8</span></b><div><span class="stars" aria-hidden="true">★★★★★</span><small><span data-lang="lv">91 atsauksme Google kartēs</span><span data-lang="ru" hidden>91 отзыв в Google Картах</span><span data-lang="en" hidden>91 reviews on Google Maps</span></small></div></div>
+        <p class="tr-note" data-lang="ru" hidden>Перевод с латышского, оригинал — под каждым отзывом.</p>
+        <p class="tr-note" data-lang="en" hidden>Translated from Latvian; the original is under each review.</p>
+      </div>
+      <figure class="lead rv-q">
+        <blockquote data-lang="ru" hidden>«Приятный парикмахер, очень внимательный, выслушивает пожелания, предлагает возможные решения…»</blockquote>
+        <blockquote data-lang="en" hidden>“A lovely hairdresser, very attentive, listens to what you want and suggests possible solutions…”</blockquote>
+        <blockquote class="src" lang="lv"><span class="lv">LV</span>„Jauks frizieris, ļoti uzmanīgs, uzklausa vēlmes, piedāvā iespējamos risinājumus…”</blockquote>
+        <figcaption class="who">Anna R.</figcaption>
+      </figure>
+    </div>
+    <div class="more">
+      <figure class="rv-q">
+        <blockquote data-lang="ru" hidden>«Индивидуальный подход, фантастическая стрижка, сердечное отношение, спокойное, тихое место, отличные средства, музыка и общая атмосфера».</blockquote>
+        <blockquote data-lang="en" hidden>“An individual approach, a fantastic cut, a warm welcome, a calm, quiet place, excellent products, music and the whole feel of the place.”</blockquote>
+        <blockquote class="src" lang="lv"><span class="lv">LV</span>„Individuāla pieeja, fantastisks griezums, sirsnīga attieksme, mierīga, klusa vieta, lieliski produkti, mūzika un kopējā vietas gaisotne.”</blockquote>
+        <figcaption class="who">Elīna B.</figcaption>
+      </figure>
+      <figure class="rv-q">
+        <blockquote data-lang="ru" hidden>«Приятный сюрприз! Мастер — профессионал высшего класса!»</blockquote>
+        <blockquote data-lang="en" hidden>“A pleasant surprise! The hairdresser is a top-class professional!”</blockquote>
+        <blockquote class="src" lang="lv"><span class="lv">LV</span>„Patīkams pārsteigums! Meistars — augstākās klases profesionālis!”</blockquote>
+        <figcaption class="who">Irita V.</figcaption>
+      </figure>
+      <figure class="rv-q">
+        <blockquote data-lang="ru" hidden>«Приятная атмосфера, профессионализм и вкусный чай».</blockquote>
+        <blockquote data-lang="en" hidden>“A pleasant atmosphere, professionalism and tasty tea.”</blockquote>
+        <blockquote class="src" lang="lv"><span class="lv">LV</span>„Patīkama atmosfēra, profesionalitāte un garda tēja.”</blockquote>
+        <figcaption class="who">Iveta</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="room" id="salons">
+  <div class="wrap room-grid">
+    <div class="room-text">
+      <p class="label"><i>/02/</i><span data-lang="lv">Salons</span><span data-lang="ru" hidden>Салон</span><span data-lang="en" hidden>The salon</span></p>
+      <h2><span data-lang="lv">Miera ielā&nbsp;— mierīgi</span><span data-lang="ru" hidden>На улице Миера&nbsp;— мирно</span><span data-lang="en" hidden>Quiet on Peace&nbsp;Street</span></h2>
+      <p><span data-lang="lv">Viesi atsauksmēs uzteic ne tikai griezumu, bet arī pašu vietu un tās sirsnīgo atmosfēru — un vairāki raksta, ka nāks atkal.</span><span data-lang="ru" hidden>В отзывах гости хвалят не только стрижку, но и само место с его душевной атмосферой — и несколько человек пишут, что придут снова.</span><span data-lang="en" hidden>Miera iela means Peace Street. Guests’ reviews praise not just the cut but the place itself and its warm atmosphere — and several say they will be back.</span></p>
+    </div>
+    <figure class="ph a">
+      <picture>
+        <source media="(max-width:860px)" srcset="img/room-m.jpg" width="1200" height="948">
+        <img src="img/room-d.jpg" width="1200" height="1500" loading="lazy" alt="Frizierdarbnīcas „Augusts” telpa: frizieru krēsli, koka grīda un monsteras" data-alt-ru="Зал Augusts: парикмахерские кресла, деревянный пол и монстеры" data-alt-en="Inside Augusts: styling chairs, wooden floor and monsteras">
+      </picture>
+      <figcaption><span class="m"><span data-lang="lv">Darba vietas pie spoguļiem</span><span data-lang="ru" hidden>Рабочие места у зеркал</span><span data-lang="en" hidden>Workstations at the mirrors</span></span><span class="d"><span data-lang="lv">Logs uz ielu</span><span data-lang="ru" hidden>Окно на улицу</span><span data-lang="en" hidden>The street window</span></span></figcaption>
+    </figure>
+    <figure class="ph b">
+      <img src="img/wall.jpg" width="1000" height="1250" loading="lazy" alt="Zaļš dīvāns zem sienas ar fotogrāfijām, galdiņš ar žurnāliem" data-alt-ru="Зелёный диван под стеной с фотографиями, столик с журналами" data-alt-en="A green sofa under a wall of photographs, a table with magazines">
+      <figcaption><span data-lang="lv">Dīvāns zem fotogrāfiju sienas</span><span data-lang="ru" hidden>Диван под стеной с фотографиями</span><span data-lang="en" hidden>The sofa under the photo wall</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="book-s" id="pieraksts">
+  <div class="wrap book-in">
+    <div class="bk-head">
+      <p class="label"><i>/03/</i><span data-lang="lv">Cenas un pieraksts</span><span data-lang="ru" hidden>Цены и запись</span><span data-lang="en" hidden>Prices and booking</span></p>
+      <h2><span data-lang="lv">Brīvie laiki redzami tiešsaistē</span><span data-lang="ru" hidden>Свободные окна видны онлайн</span><span data-lang="en" hidden>See free slots online</span></h2>
+      <p class="intro"><span data-lang="lv">Augusta tiešsaistes pierakstā ir pakalpojumi sievietēm, vīriešiem un bērniem — izvēlieties pakalpojumu, dienu un laiku. Ja vēlaties vispirms aprunāties, zvaniet vai rakstiet.</span><span data-lang="ru" hidden>В онлайн-записи Augusts есть услуги для женщин, мужчин и детей — выберите услугу, день и время. Если хотите сначала поговорить, позвоните или напишите.</span><span data-lang="en" hidden>Augusts’s online booking covers women, men and children — pick the service, the day and the time. If you would rather talk first, call or write.</span></p>
+    </div>
+    <div class="prices">
+      <p class="p-h"><span data-lang="lv">Daži pakalpojumi</span><span data-lang="ru" hidden>Некоторые услуги</span><span data-lang="en" hidden>A few of the services</span></p>
+      <dl>
+        <div><dt><span data-lang="lv">Griezums sievietēm</span><span data-lang="ru" hidden>Женская стрижка</span><span data-lang="en" hidden>Women’s haircut</span></dt><dd><span data-lang="lv">30<i>–</i>60 €</span><span data-lang="ru" hidden>30<i>–</i>60 €</span><span data-lang="en" hidden>€30<i>–</i>60</span></dd></div>
+        <div><dt><span data-lang="lv">Griezums vīriešiem</span><span data-lang="ru" hidden>Мужская стрижка</span><span data-lang="en" hidden>Men’s haircut</span></dt><dd><span data-lang="lv">30<i>–</i>50 €</span><span data-lang="ru" hidden>30<i>–</i>50 €</span><span data-lang="en" hidden>€30<i>–</i>50</span></dd></div>
+        <div><dt><span data-lang="lv">Griezums bērniem līdz&nbsp;10&nbsp;gadiem</span><span data-lang="ru" hidden>Детская стрижка, до&nbsp;10&nbsp;лет</span><span data-lang="en" hidden>Children’s haircut, up to age&nbsp;10</span></dt><dd><span data-lang="lv">30<i>–</i>40 €</span><span data-lang="ru" hidden>30<i>–</i>40 €</span><span data-lang="en" hidden>€30<i>–</i>40</span></dd></div>
+        <div><dt><span data-lang="lv">Matu krāsošana</span><span data-lang="ru" hidden>Окрашивание волос</span><span data-lang="en" hidden>Hair colouring</span></dt><dd><span data-lang="lv">50<i>–</i>60 €/h</span><span data-lang="ru" hidden>50<i>–</i>60 €/ч</span><span data-lang="en" hidden>€50<i>–</i>60/h</span></dd></div>
+        <div><dt><span data-lang="lv">Matu balināšana</span><span data-lang="ru" hidden>Осветление волос</span><span data-lang="en" hidden>Hair lightening</span><small>Air touch, balayage, baby highlights</small></dt><dd><span data-lang="lv">50<i>–</i>70 €/h</span><span data-lang="ru" hidden>50<i>–</i>70 €/ч</span><span data-lang="en" hidden>€50<i>–</i>70/h</span></dd></div>
+      </dl>
+      <p class="p-note"><span data-lang="lv">Cenas ņemtas no Augusta tiešsaistes pieraksta 28.09.2026. Tur atradīsiet arī tonēšanu, krāsas labošanu, frizūras īpašiem gadījumiem un galvas masāžu.</span><span data-lang="ru" hidden>Цены — из онлайн-записи Augusts, 28.09.2026. Там же тонирование, коррекция цвета, причёски для особых случаев и массаж головы.</span><span data-lang="en" hidden>Prices from Augusts’s online booking, 28.09.2026. It also lists toning, colour correction, styling for special occasions and a head massage.</span></p>
+    </div>
+    <div class="bk-go">
+      <a class="btn red go" href="https://fortic.io/onlinebooking-augusts" target="_blank" rel="noopener"><span data-lang="lv">Atvērt pierakstu</span><span data-lang="ru" hidden>Открыть запись</span><span data-lang="en" hidden>Open booking</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <p class="via"><span data-lang="lv">Atvērsies Fortic — Augusta pierakstu sistēma latviešu vai angļu valodā.</span><span data-lang="ru" hidden>Откроется Fortic — система записи Augusts, на латышском или английском.</span><span data-lang="en" hidden>Opens Fortic, Augusts’s booking system, in Latvian or English.</span></p>
+    </div>
+    <div class="tiles">
+      <a class="tile" href="tel:+37120133088"><span><span data-lang="lv">Tālrunis</span><span data-lang="ru" hidden>Телефон</span><span data-lang="en" hidden>Phone</span></span><b>20 133 088</b></a>
+      <a class="tile mail" href="mailto:kristine.augusts@gmail.com"><span><span data-lang="lv">E-pasts</span><span data-lang="ru" hidden>E-mail</span><span data-lang="en" hidden>Email</span></span><b>kristine.augusts@gmail.com</b></a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="kur">
+  <div class="wrap visit-grid">
+    <figure class="ph sign">
+      <img src="img/sign.jpg" width="1100" height="1376" loading="lazy" alt="Tumšā /08/ zīme pie sienas un apaļais Augusts logo uz loga, aiz stikla sarkans motorollers" data-alt-ru="Тёмная табличка /08/ на стене и круглый логотип Augusts на окне, за стеклом красный мотороллер" data-alt-en="The dark /08/ sign on the wall and the round Augusts logo on the window, a red scooter behind the glass">
+    </figure>
+    <div>
+      <p class="label"><i>/04/</i><span data-lang="lv">Kur un kad</span><span data-lang="ru" hidden>Где и когда</span><span data-lang="en" hidden>Where and when</span></p>
+      <h2>Miera iela 19</h2>
+      <p class="addr"><span data-lang="lv">Rīga, LV-1001</span><span data-lang="ru" hidden>ул. Миера, 19, Рига, LV-1001</span><span data-lang="en" hidden>Rīga, LV-1001</span></p>
+      <p class="how"><span data-lang="lv">Meklējiet tumšo /08/ zīmi pie sienas un apaļo logo uz loga — aiz stikla stāv sarkans motorollers.</span><span data-lang="ru" hidden>Ищите тёмную табличку /08/ на стене и круглый логотип на окне — за стеклом стоит красный мотороллер.</span><span data-lang="en" hidden>Look for the dark /08/ sign on the wall and the round logo on the window — a red scooter stands behind the glass.</span></p>
+      <a class="btn line" href="https://maps.google.com/?cid=9451844200055835517" target="_blank" rel="noopener"><span data-lang="lv">Atvērt Google kartēs</span><span data-lang="ru" hidden>Открыть в Google Картах</span><span data-lang="en" hidden>Open in Google Maps</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <div class="hours">
+        <p class="now" id="now"><i></i><span>Darba laiks</span></p>
+        <div class="row" data-days="1,2,3,4,5"><span><span data-lang="lv">Pirmdiena–piektdiena</span><span data-lang="ru" hidden>Понедельник–пятница</span><span data-lang="en" hidden>Monday–Friday</span></span><span>10:00–19:00</span></div>
+        <div class="row" data-days="6"><span><span data-lang="lv">Sestdiena</span><span data-lang="ru" hidden>Суббота</span><span data-lang="en" hidden>Saturday</span></span><span>10:00–17:00</span></div>
+        <div class="row" data-days="0"><span><span data-lang="lv">Svētdiena</span><span data-lang="ru" hidden>Воскресенье</span><span data-lang="en" hidden>Sunday</span></span><span><span data-lang="lv">slēgts</span><span data-lang="ru" hidden>закрыто</span><span data-lang="en" hidden>closed</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div class="f-id">
+        <!-- the round sticker on their window, redrawn as a line mark -->
+        <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="/08/ Augusts frizierdarbnīca">
+          <circle cx="60" cy="60" r="58.5" fill="none" stroke="currentColor" stroke-width="1"/>
+          <text x="60" y="42" text-anchor="middle" font-size="10.5" font-weight="500" letter-spacing="1">/08/</text>
+          <text x="60" y="65" text-anchor="middle" font-size="17" font-weight="500" textLength="88" lengthAdjust="spacing">AUGUSTS</text>
+          <text x="60" y="77" text-anchor="middle" font-size="5.8" font-weight="600" textLength="56" lengthAdjust="spacing">FRIZIERDARBNĪCA</text>
+          <path d="M60 88c-2-2.6-3.6-3.6-5.4-3.6a3.6 3.6 0 0 0 0 7.2c1.8 0 3.4-1 5.4-3.6s3.6-3.6 5.4-3.6a3.6 3.6 0 0 1 0 7.2c-1.8 0-3.4-1-5.4-3.6z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <p><span data-lang="lv">Frizierdarbnīca</span><span data-lang="ru" hidden>Парикмахерская</span><span data-lang="en" hidden>Hair salon</span>, SIA „August”, <span class="nw">Miera iela 19,</span> <span class="nw">Rīga, LV-1001</span><span class="links"><a href="tel:+37120133088">20&nbsp;133&nbsp;088</a>, <a href="https://www.facebook.com/AUGUSTS08/" target="_blank" rel="noopener">Facebook</a>, <a href="https://www.instagram.com/augusts08/" target="_blank" rel="noopener">Instagram</a></span></p>
+      </div>
+      <p><span data-lang="lv">Fotogrāfijas: Augusta viesi Google kartēs — Zane Viksne, Maike K.</span><span data-lang="ru" hidden>Фотографии: гости Augusts в Google Картах — Zane Viksne, Maike K.</span><span data-lang="en" hidden>Photos: Augusts’s guests on Google Maps — Zane Viksne, Maike K.</span></p>
+    </div>
+    <p class="fine"><span data-lang="lv">Šī lapa ir Nikitas dizaina priekšlikums, nevis frizierdarbnīcas „Augusts” oficiālā lapa. Saziņai:</span><span data-lang="ru" hidden>Эта страница — дизайн-предложение Никиты, а не официальный сайт парикмахерской Augusts. Связь:</span><span data-lang="en" hidden>This page is a design proposal by Nikita, not the official website of the Augusts hair salon. Contact:</span> <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var LANGS=['lv','ru','en'], lang='lv';
+  var $$=function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
+  var T={
+    lv:{title:'/08/ Augusts — frizierdarbnīca Miera ielā 19, Rīgā', hours:'Darba laiks',
+        open:'Šobrīd atvērts līdz ', today:'Šodien atvērts no ', closed:'Šobrīd slēgts, atvērts ', tomorrow:'rīt', at:' no ',
+        days:['svētdien','pirmdien','otrdien','trešdien','ceturtdien','piektdien','sestdien']},
+    ru:{title:'/08/ Augusts — парикмахерская на улице Миера, 19, Рига', hours:'Часы работы',
+        open:'Сейчас открыто до ', today:'Сегодня откроется в ', closed:'Сейчас закрыто, откроется ', tomorrow:'завтра', at:' в ',
+        days:['в воскресенье','в понедельник','во вторник','в среду','в четверг','в пятницу','в субботу']},
+    en:{title:'/08/ Augusts — hair salon at Miera iela 19, Rīga', hours:'Opening hours',
+        open:'Open now until ', today:'Opens today at ', closed:'Closed now, opens ', tomorrow:'tomorrow', at:' at ',
+        days:['on Sunday','on Monday','on Tuesday','on Wednesday','on Thursday','on Friday','on Saturday']}
+  };
+
+  /* header turns solid once the photo is behind it */
+  var top=document.getElementById('top'), hero=document.getElementById('sakums'), tick=false;
+  function upd(){ tick=false; top.classList.toggle('solid', hero.getBoundingClientRect().top < -24); }
+  window.addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
+  window.addEventListener('resize',upd); upd();
+
+  /* open now — Rīga time */
+  var H={0:null,1:[600,1140],2:[600,1140],3:[600,1140],4:[600,1140],5:[600,1140],6:[600,1020]};
+  function hm(m){ return Math.floor(m/60)+':'+('0'+(m%60)).slice(-2); }
+  var d, mins;
+  try{
+    var p={}; new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Riga',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false})
+      .formatToParts(new Date()).forEach(function(x){ p[x.type]=x.value; });
+    d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday); mins=(+p.hour%24)*60+(+p.minute);
+  }catch(e){ var n=new Date(); d=n.getDay(); mins=n.getHours()*60+n.getMinutes(); }
+  var t=H[d], open=!!(t && mins>=t[0] && mins<t[1]);
+  function status(){
+    var L=T[lang], txt=L.hours;
+    if(open){ txt=L.open+hm(t[1]); }
+    else if(t && mins<t[0]){ txt=L.today+hm(t[0]); }
+    else{
+      for(var i=1;i<8;i++){ var nd=(d+i)%7; if(H[nd]){ txt=L.closed+(i===1?L.tomorrow:L.days[nd])+L.at+hm(H[nd][0]); break; } }
+    }
+    [document.getElementById('status'),document.getElementById('now')].forEach(function(el){
+      if(!el) return; el.querySelector('span').textContent=txt; el.classList.toggle('is-open',open);
+    });
+  }
+  $$('.hours [data-days]').forEach(function(el){
+    if(el.getAttribute('data-days').split(',').indexOf(String(d))>-1) el.classList.add('today');
+  });
+
+  /* language: LV, RU, EN, honours ?lang= at load */
+  $$('img[data-alt-en]').forEach(function(i){ i.setAttribute('data-alt-lv',i.alt); });
+  function setLang(l){
+    if(LANGS.indexOf(l)<0) l='lv';
+    lang=l; document.documentElement.lang=l; document.title=T[l].title;
+    $$('[data-lang]').forEach(function(e){ e.hidden=e.getAttribute('data-lang')!==l; });
+    $$('.langs button').forEach(function(b){ b.setAttribute('aria-pressed',b.getAttribute('data-set')===l?'true':'false'); });
+    $$('img[data-alt-lv]').forEach(function(i){ i.alt=i.getAttribute('data-alt-'+l)||i.getAttribute('data-alt-lv'); });
+    try{ localStorage.setItem('augusts-lang',l); }catch(e){}
+    status();
+  }
+  $$('.langs button').forEach(function(b){ b.addEventListener('click',function(){ setLang(b.getAttribute('data-set')); }); });
+  var start='lv';
+  try{
+    var q=new URLSearchParams(location.search).get('lang');
+    if(q && LANGS.indexOf(q)>-1) start=q;
+    else { var st=localStorage.getItem('augusts-lang'); if(st && LANGS.indexOf(st)>-1) start=st; }
+  }catch(e){}
+  setLang(start);
+})();
+</script>
+</body>
+</html>
